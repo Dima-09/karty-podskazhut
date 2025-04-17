@@ -20,3 +20,80 @@ li,
 figure {
   margin: 0;
 }
+
+:root{
+  --bg-color: rgba(243, 239, 236, 1);
+  --text-color: rgba(49, 42, 78, 1);
+  --accent-color: rgba(255, 171, 107, 1);
+  --main-font: Raleway;
+  --accent-font: 'STIX Two Text';
+}
+
+.page{
+  background-color: var(--bg-color, rgba(243, 239, 236, 1));
+  color: var(--text-color, rgba(49, 42, 78, 1));
+  font-family: var(--main-font), sans-serif;
+}
+
+.heading{
+  font-family: var(--accent-font), serif;
+  font-weight: 600;
+  line-height: 90%;
+  text-align: center;
+}
+
+.content-section{
+  padding: 0 5vi;
+}
+
+
+.header__title{
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  padding-bottom: 40px;
+}
+
+.content__title{
+  font-size: 30px;
+  padding-top: 7%;
+  padding-bottom: 2.5%;
+}
+
+.content__text-block{
+  font-size: 18px;
+}
+
+.content__link{
+  color: inherit;
+}
+
+.content__text-block .content__paragraph:not(:last-of-type){
+  margin-bottom: 1.5em;
+}
+
+.content__blockquote{
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 1.5em;
+  font-style: italic;
+  line-height: 200%;
+}
+
+.content__list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.content__list-item::before{
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/marker-light.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
