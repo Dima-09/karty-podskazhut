@@ -97,3 +97,10 @@ figure {
   background-repeat: no-repeat;
   margin-right: 10px;
 }
+
+.content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter{
+  padding: 0 4px;
+  margin-right: 1px;
+  background-color: var(--accent-color);
+  display: inline-block ;
+}
