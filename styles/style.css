@@ -78,9 +78,18 @@ figure {
   background-color: transparent;
 }
 
+.header__theme-button:hover{
+  text-decoration: underline;
+}
+
+.header__theme-button:focus-visible {
+  outline: 1px solid currentColor;
+}
+
 .header__theme-button_is-active{
   position: relative;
   font-weight: 700;
+  pointer-events: none;
 }
 
 .header__theme-button_is-active::after{
@@ -106,6 +115,10 @@ figure {
 
 .content__link{
   color: inherit;
+}
+
+.content__link:focus-visible{
+  outline: 1px solid currentColor;
 }
 
 .content__text-block .content__paragraph:not(:last-of-type){
@@ -195,4 +208,11 @@ figure {
   height: 0.3em;
   background-color: var(--accent-color);
   z-index: -1;
+}
+
+.footer{
+  margin-top: 10%;
+  padding: 2.5%;
+  border-top: 1px solid currentColor;
+  text-align: center;
 }
